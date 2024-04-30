@@ -1,12 +1,69 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+const keys = [
+  [
+    ['1', "!"],
+    ['2', "@"],
+    ['3', "#"],
+    ['4', "$"],
+    ['5', "%"],
+    ['6', "&"],
+    ['7', "/"],
+    ['8', "("],
+    ['9', ")"],
+    ['0', "="],
+    ["'", '?'],
+    ['¿', "¡"],
+  ],//primera fila
+  [
+    ['q', "Q"],
+    ['w', "W"],
+    ['e', "E"],
+    ['r', "R"],
+    ['t', "T"],
+    ['y', "Y"],
+    ['u', "U"],
+    ['i', "I"],
+    ['o', "O"],
+    ['p', "P"],
+    ['´', "¨"],
+    ['+', "*"],
+  ],//segunda fila
+  [
+    ['MAYUS', "MAYUS"],
+    ['a', "A"],
+    ['s', "S"],
+    ['d', "D"],
+    ['f', "F"],
+    ['g', "G"],
+    ['h', "H"],
+    ['j', "J"],
+    ['k', "K"],
+    ['l', "L"],
+    ['ñ', "Ñ"],
+    ['{', "["],
+    ['}', "]"],
+  ],//tercera fila
+  [
+    ['SHIFT', "SHIFT"],
+    ['<', ">"],
+    ['z', "Z"],
+    ['x', "X"],
+    ['c', "C"],
+    ['v', "V"],
+    ['b', "B"],
+    ['n', "N"],
+    ['m', "M"],
+    [',', ";"],
+    ['.', ":"],
+    ['-', "_"],
+  ],//cuarta fila
+  [
+    ['SPACE', "SPACE"],
+  ],//quinta fila
+];
 
-let container = document.querySelector(".container");
-let btn = document.getElementById("spin");
-let number = Math.ceil(Math.random() * 100000);
+let mayus = false;
+let shift = false;
 
-btn.onclick = function() {
-  container.style.transform = "rotate(" + number + "deg)";
-  number += Math.ceil(Math.random() * 10000);
-};
+functionrenderKeyboard(){
+
+}

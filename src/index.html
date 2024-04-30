@@ -1,43 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rueda de la Fortuna by Luis Luna</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Virtual Keyboard</title>
   </head>
   <body>
-    <button id="spin">Girar</button>
-    <audio id="myAudio">
-      <source src="../src/rulet_audio.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-
-    <script>
-      var audio = document.getElementById("myAudio");
-      var spin = document.getElementById("spin");
-
-      spin.addEventListener("click", function() {
-        audio.play();
-      });
-    </script>
-
-    <span class="arrow"></span>
-    <div class="container">
-      <div class="one">oıɯǝɹd uıs</div>
-      <div class="two">sıʇɐɹƃ ɐʇןnsuoɔ</div>
-      <div class="three">oɔod ɹod</div>
-      <div class="four">%02</div>
-      <div class="five">oʌǝnu ǝp ǝʇuǝʇuı</div>
-      <div class="six">%51</div>
-      <div class="seven">oʌǝnu ǝp ǝʇuǝʇuı</div>
-      <div class="eight">%01-</div>
+    <script src="app.js"></script>
+    <div id="app">
+      <input type="text" class="input" />
+      <div id="keyboard-container"></div>
     </div>
   </body>
 </html>
